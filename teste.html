@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #800080; 
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #00ff00; 
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 20px;
+            width: 500px; 
+            padding: 5px 15px;
+        }
+        .search-bar button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #555;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        .search-bar input {
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 5px;
+            border-radius: 20px;
+            font-size: 1em;
+        }
+        .search-bar input::placeholder {
+            color: #555;
+        }
+        .profile-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #800080; 
+        }
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out; 
+            width: 100%; 
+        }
+        .carousel-images img {
+            width: 100%; 
+            height: 400px; 
+            object-fit: cover; 
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2em;
+            color: #fff;
+            cursor: pointer;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 10px;
+            border-radius: 50%; 
+            transition: background-color 0.3s;
+        }
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.7); 
+        }
+        .left-arrow {
+            left: 10px;
+        }
+        .right-arrow {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sport L<span class="highlight">!</span>fe</h1>
+        <div class="search-bar">
+            <button>&#128269;</button> 
+            <input type="text" placeholder="Pesquise por um produto ou esporte">
+        </div>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmotorsport.uol.com.br%2Fdriver%2Fmax-verstappen%2F127032%2F&psig=AOvVaw2lxj2V2VkvnD9-zWnipHDp&ust=1730521599051000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCFn72luokDFQAAAAAdAAAAABAE" alt="Max Verstappen" class="profile-image">
+    </header>
+
+    <nav>
+        <a href="#masculino">Masculino</a>
+        <a href="#feminino">Feminino</a>
+        <a href="#infantil">Infantil</a>
+        <a href="#acessorios">Acessórios</a>
+        <a href="#marcas">Marcas</a>
+    </nav>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="https://via.placeholder.com/800x400/FF0000/FFFFFF?text=Imagem+1" alt="Imagem do Esporte 1"> 
+            <img src="https://via.placeholder.com/800x400/00FF00/FFFFFF?text=Imagem+2" alt="Imagem do Esporte 2"> 
+            <img src="https://via.placeholder.com/800x400/0000FF/FFFFFF?text=Imagem+3" alt="Imagem do Esporte 3"> 
+            <img src="https://via.placeholder.com/800x400/FFFF00/FFFFFF?text=Imagem+4" alt="Imagem do Esporte 4"> 
+        </div>
+        <div class="arrow left-arrow" onclick="prevImage()">&#10094;</div> 
+        <div class="arrow right-arrow" onclick="nextImage()">&#10095;</div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelector('.carousel-images');
+        const totalImages = document.querySelectorAll('.carousel-images img').length;
+
+        function nextImage() {
+            
+            if (currentIndex < totalImages - 1) {
+                currentIndex++; 
+            }
+            updateCarousel();
+        }
+
+        function prevImage() {
+            
+            if (currentIndex > 0) {
+                currentIndex--; 
+            }
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            
+            const offset = currentIndex * -100; 
+            images.style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+
+</body>
+</html>
