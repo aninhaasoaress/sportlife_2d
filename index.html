@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <title>Sport Life</title>
     <style>
         body {
@@ -11,7 +12,7 @@
             padding: 0;
         }
         header {
-            background-color: #800080; 
+            background-color: #722dab; 
             color: #fff;
             display: flex;
             align-items: center;
@@ -23,8 +24,16 @@
             font-size: 1.8em;
             font-weight: bold;
         }
+        .clicavel {
+            text-decoration: none;
+        }
+        .logo {
+            color: white;
+            font-family: "League Spartan";
+        }
         .highlight {
-            color: #00ff00; 
+            color: #80bb38;
+            font-size: 40px;
         }
         .search-bar {
             display: flex;
@@ -49,9 +58,11 @@
             padding: 5px;
             border-radius: 20px;
             font-size: 1em;
+            font-family: "League Spartan";
+            font-weight: 700;
         }
         .search-bar input::placeholder {
-            color: #555;
+            color: #aca9a9;
         }
         .profile-image {
             width: 50px;
@@ -117,10 +128,10 @@
 <body>
 
     <header>
-        <h1>Sport L<span class="highlight">!</span>fe</h1>
+        <a class="clicavel" href="index.html"><h1 class="logo">SPORT L<span class="highlight">!</span>FE</h1></a>
         <div class="search-bar">
             <button>&#128269;</button> 
-            <input type="text" placeholder="Pesquise por um produto ou esporte">
+            <input type="text" placeholder="O que você procura?">
         </div>
         <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmotorsport.uol.com.br%2Fdriver%2Fmax-verstappen%2F127032%2F&psig=AOvVaw2lxj2V2VkvnD9-zWnipHDp&ust=1730521599051000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCFn72luokDFQAAAAAdAAAAABAE" alt="Max Verstappen" class="profile-image">
     </header>
