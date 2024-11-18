@@ -4,126 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Imagens/logo2.png">
     <title>Sport Life</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #722dab; 
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.8em;
-            font-weight: bold;
-        }
-        .clicavel {
-            text-decoration: none;
-        }
-        .logo {
-            color: white;
-            font-family: "League Spartan";
-        }
-        .highlight {
-            color: #80bb38;
-            font-size: 40px;
-        }
-        .search-bar {
-            display: flex;
-            align-items: center;
-            background-color: #fff;
-            border-radius: 20px;
-            width: 500px; 
-            padding: 5px 15px;
-        }
-        .search-bar button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: #555;
-            font-size: 1.2em;
-            margin-right: 10px;
-        }
-        .search-bar input {
-            border: none;
-            outline: none;
-            width: 100%;
-            padding: 5px;
-            border-radius: 20px;
-            font-size: 1em;
-            font-family: "League Spartan";
-            font-weight: 700;
-        }
-        .search-bar input::placeholder {
-            color: #aca9a9;
-        }
-        .profile-image {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        nav {
-            background-color: #f0f0f0;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #333;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            color: #800080; 
-        }
-        .carousel {
-            position: relative;
-            max-width: 800px;
-            margin: 20px auto;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-        .carousel-images {
-            display: flex;
-            transition: transform 0.5s ease-in-out; 
-            width: 100%; 
-        }
-        .carousel-images img {
-            width: 100%; 
-            height: 400px; 
-            object-fit: cover; 
-        }
-        .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 2em;
-            color: #fff;
-            cursor: pointer;
-            user-select: none;
-            background-color: rgba(0, 0, 0, 0.5); 
-            padding: 10px;
-            border-radius: 50%; 
-            transition: background-color 0.3s;
-        }
-        .arrow:hover {
-            background-color: rgba(0, 0, 0, 0.7); 
-        }
-        .left-arrow {
-            left: 10px;
-        }
-        .right-arrow {
-            right: 10px;
-        }
-    </style>
+
 </head>
 <body>
 
@@ -133,28 +16,76 @@
             <button>&#128269;</button> 
             <input type="text" placeholder="O que você procura?">
         </div>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmotorsport.uol.com.br%2Fdriver%2Fmax-verstappen%2F127032%2F&psig=AOvVaw2lxj2V2VkvnD9-zWnipHDp&ust=1730521599051000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCFn72luokDFQAAAAAdAAAAABAE" alt="Max Verstappen" class="profile-image">
-    </header>
-
-    <nav>
-        <a href="#masculino">Masculino</a>
-        <a href="#feminino">Feminino</a>
-        <a href="#infantil">Infantil</a>
-        <a href="#acessorios">Acessórios</a>
-        <a href="#marcas">Marcas</a>
-    </nav>
-
-    <div class="carousel">
-        <div class="carousel-images">
-            <img src="https://via.placeholder.com/800x400/FF0000/FFFFFF?text=Imagem+1" alt="Imagem do Esporte 1"> 
-            <img src="https://via.placeholder.com/800x400/00FF00/FFFFFF?text=Imagem+2" alt="Imagem do Esporte 2"> 
-            <img src="https://via.placeholder.com/800x400/0000FF/FFFFFF?text=Imagem+3" alt="Imagem do Esporte 3"> 
-            <img src="https://via.placeholder.com/800x400/FFFF00/FFFFFF?text=Imagem+4" alt="Imagem do Esporte 4"> 
+        <div class="icons">
+            <img class="coracao" src="Imagens/coracao.png">
+            <img class="perfil" src="Imagens/perfil.png">
+            <img class="carrinho" src="Imagens/carrinho.png">
         </div>
-        <div class="arrow left-arrow" onclick="prevImage()">&#10094;</div> 
-        <div class="arrow right-arrow" onclick="nextImage()">&#10095;</div>
-    </div>
+    </header>
+    <hr class="linhaseparando">
+    <nav class="barranav">
+        <span class="topicosnavegacao">
+            <a href="equipamentos.html">Equipamentos</a>
+            <div class="divisao"></div>
+        </span>
+        <span class="topicosnavegacao">
+            <a href="feminino1.html">Feminino</a>
+            <div class="divisao"></div>
+        </span>
+        <span class="topicosnavegacao">
+            <a href="Infantil1.html">Infantil</a>
+            <div class="divisao"></div>
+        </span> 
+        <span class="topicosnavegacao">
+            <a href="masculino.html">Masculino</a>
+            <div class="divisao"></div>
+        </span>
+        <a href="marcas.html">Marcas</a>
+    </nav>
+    <span class="main">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="Imagens/imagem1.png" alt="Imagem do Esporte 1"> 
+                <img src="Imagens/imagem2.png" alt="Imagem do Esporte 2"> 
+                <img src="Imagens/imagem3.png" alt="Imagem do Esporte 3"> 
+                <img src="Imagens/imagem4.png" alt="Imagem do Esporte 4">
+                <img src="Imagens/imagem5.png" alt="Imagem do Esporte 5"> 
+            </div>
+            <div class="arrow left-arrow" onclick="prevImage()">&#10094;</div> 
+            <div class="arrow right-arrow" onclick="nextImage()">&#10095;</div>
+        </div>
 
+        <div class="topicos">
+            <span class="topic">
+                <img src="Imagens/blackfriday.png">
+                <h1 class="topictxt">Esquenta Black Friday</h1>
+            </span>
+            <span class="topic">
+                <img class="topicimg" src="Imagens/maismenos.png">
+                <h1 class="topictxt">Leve mais Por menos</h1>
+            </span>
+            <span class="topic">
+                <img class="topicimg" src="Imagens/barraca.png">
+                <h1 class="topictxt">Barracas</h1>
+            </span>
+            <span class="topic">
+                <img class="topicimg" src="Imagens/mochila.png">
+                <h1 class="topictxt">Mochilas</h1>
+            </span>
+            <span class="topic">
+                <img class="topicimg" src="Imagens/tenis.png">
+                <h1 class="topictxt">Tênis</h1>
+            </span>
+            <span class="topic">
+                <img class="topicimg" src="Imagens/moca.png">
+                <h1 class="topictxt">Complemente seu treino</h1>
+            </span>
+            <span class="topic">
+                <img class="topicimg" src="Imagens/bola.png">
+                <h1 class="topictxt">SportL!fe Empresas</h1>
+            </span>
+        </div>
+    </span>
     <script>
         let currentIndex = 0;
         const images = document.querySelector('.carousel-images');
@@ -179,7 +110,7 @@
         function updateCarousel() {
             
             const offset = currentIndex * -100; 
-            images.style.transform = `translateX(${offset}%)`;
+            images.style.transform = translateX(${offset}%);
         }
     </script>
 
