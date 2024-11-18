@@ -26,7 +26,9 @@ Referências:
 
 - Um pouco do site da Nike e Adidas;
 
-- Ajuda do Chatgpt.
+- Ajuda do Chatgpt;
+
+- Imagens da internet.
 
 
 
