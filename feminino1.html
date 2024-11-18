@@ -4,125 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Imagens/logo2.png">
     <title>Feminino - Sport Life</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "League Spartan", sans-serif;
-        }
-        header {
-            background-color: #722dab; 
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.8em;
-            font-weight: bold;
-        }
-        .icons {
-            display: flex;
-            gap: 40px;
-            margin-right: 15px;
-        }
-        .clicavel {
-            text-decoration: none;
-            color: white;
-        }
-        .logo {
-            color: white;
-            font-family: "League Spartan";
-            font-size: 40px;
-        }
-        .highlight {
-            color: #80bb38;
-            font-size: 50px;
-        }
-        .search-bar {
-            display: flex;
-            align-items: center;
-            background-color: #fff;
-            border-radius: 50px;
-            width: 600px; 
-            padding: 15px 20px;
-        }
-        .search-bar button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: #555;
-            font-size: 1.2em;
-            margin-right: 10px;
-        }
-        .search-bar input {
-            border: none;
-            outline: none;
-            width: 100%;
-            padding: 5px;
-            border-radius: 20px;
-            font-size: 20px;
-            font-family: "League Spartan";
-            font-weight: 700;
-        }
-        .search-bar input::placeholder {
-            color: #aca9a9;
-        }
-        nav {
-            background-color: #722dab;
-            padding: 15px 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            font-family: "League Spartan";
-            font-weight: 600;
-            font-size: 25px;
-            margin: 0 45px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            color: #bf94e2; 
-            transition: 0.2s;
-        }
-        main {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Três colunas */
-            gap: 20px;
-        }
-        .product-card {
-            text-align: center;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-        }
-        .product-card img {
-            width: 100%;
-            height: 330px; /* Aumentando a altura das imagens */
-            object-fit: cover;
-            background-color: black;
-            border-radius: 8px;
-        }
-        .product-price {
-            font-size: 1.2em;
-            color: #80bb38;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .product-description {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 5px;
-        }
-    </style>
+
 </head>
 <body>
     <header>
@@ -132,68 +16,128 @@
             <input type="text" placeholder="O que você procura?">
         </div>
         <div class="icons">
-            <img class="coracao" src="Imagens/coracao.png" alt="Ícone de coração">
-            <img class="perfil" src="Imagens/perfil.png" alt="Ícone de perfil">
-            <img class="carrinho" src="Imagens/carrinho.png" alt="Ícone de carrinho">
+            <img class="coracao" src="Imagens/coracao.png">
+            <img class="perfil" src="Imagens/perfil.png">
+            <img class="carrinho" src="Imagens/carrinho.png">
         </div>
     </header>
-    <nav>
-        <a href="equipamentos.html">Equipamentos</a>
-        <a href="feminino.html">Feminino</a>
-        <a href="infantil.html">Infantil</a>
-        <a href="masculino.html">Masculino</a>
+    <hr class="linhaseparando">
+    <nav class="barranav">
+        <span class="topicosnavegacao">
+            <a href="equipamentos.html">Equipamentos</a>
+            <div class="divisao"></div>
+        </span>
+        <span class="topicosnavegacao">
+            <a href="feminino1.html">Feminino</a>
+            <div class="divisao"></div>
+        </span>
+        <span class="topicosnavegacao">
+            <a href="Infantil1.html">Infantil</a>
+            <div class="divisao"></div>
+        </span> 
+        <span class="topicosnavegacao">
+            <a href="masculino.html">Masculino</a>
+            <div class="divisao"></div>
+        </span>
         <a href="marcas.html">Marcas</a>
-        <a href="clube.html">Clube Sport <span style="color: #80bb38;">L!fe</span></a>
     </nav>
-    <main>
-        <h1>Produtos Femininos</h1>
-        <div class="products">
-            <div class="product-card">
-                <img src="#" alt="Produto 1">
-                <p class="product-price">R$ 159,90</p>
-                <p class="product-description">Tênis de Corrida Feminino</p>
-            </div>
-            <div class="product-card">
-                <img src="#" alt="Produto 2">
-                <p class="product-price">R$ 129,90</p>
-                <p class="product-description">Legging Fitness</p>
-            </div>
-            <div class="product-card">
-                <img src="#" alt="Produto 3">
-                <p class="product-price">R$ 179,90</p>
-                <p class="product-description">Top de Yoga</p>
-            </div>
-            <div class="product-card">
-                <img src="#" alt="Produto 4">
-                <p class="product-price">R$ 89,90</p>
-                <p class="product-description">Shorts de Corrida</p>
-            </div>
-            <div class="product-card">
-                <img src="#" alt="Produto 5">
-                <p class="product-price">R$ 199,90</p>
-                <p class="product-description">Mochila Esportiva</p>
-            </div>
-            <div class="product-card">
-                <img src="#" alt="Produto 6">
-                <p class="product-price">R$ 79,90</p>
-                <p class="product-description">Camiseta Esportiva Feminina</p>
-            </div>
-            <div class="product-card">
-                <img src="#" alt="Produto 7">
-                <p class="product-price">R$ 89,90</p>
-                <p class="product-description">Boné Esportivo</p>
-            </div>
-            <div class="product-card">
-                <img src="#" alt="Produto 8">
-                <p class="product-price">R$ 159,90</p>
-                <p class="product-description">Tênis de Treinamento</p>
-            </div>
-            <div class="product-card">
-                <img src="#" alt="Produto 9">
-                <p class="product-price">R$ 119,90</p>
-                <p class="product-description">Jaqueta de Corrida</p>
-            </div>
+    <div class="main">
+        <div class="descricaoequip">
+            <span class="equipcaixa1">
+                <h1 class="equiptxt1">Feminino</h1>
+                <h2 class="equiptxt2">(14.839 resultados)</h2>
+            </span>
+            <span class="equipcaixa2">
+                <h1 class="equiptxt3">Cores</h1>
+                <span class="bolas">
+                    <div class="cor1"></div>
+                    <div class="cor2"></div>
+                    <div class="cor3"></div>
+                    <div class="cor4"></div>
+                </span>
+            </span>
+            <span class="equipcaixa3">
+                <span class="subcaixa1">
+                    <img class="setas" src="Imagens/setas.png">
+                    <h1 class="equiptxt4">Faixa de preço</h1>
+                </span>
+                <img class="barrinhapreco" src="Imagens/barrinha.png">
+            </span>
+            <span class="equipcaixa4">
+                <h1 class="equiptxt5">Tamanhos</h1>
+                <div class="grid-container">
+                    <div class="grid-item">PP</div>
+                    <div class="grid-item">P</div>
+                    <div class="grid-item">M</div>  
+                    <div class="grid-item">G</div>
+                    <div class="grid-item">GG</div>
+                    <div class="grid-item">XG</div>  
+                    <div class="grid-item">XGG</div>
+                    <div class="grid-item">EG</div>
+                    <div class="grid-item">EGG</div>  
+                  </div>
+            </span>
         </div>
-    </main>
+        <div class="produtosprincipais">
+            <span class="linha1">
+                <div class="produtocaixa">
+                    <div class="produto">
+                        <img class="produtoimg" src="Imagens/camiseta.png">
+                    </div>
+                    <span>
+                        <h1 class="protxt1">Camiseta Poker Esportiva Basic</h1>
+                        <h1 class="protxt2">R$ 59,99</h1>
+                    </span>
+                </div>
+                <div class="produtocaixa">
+                    <div class="produto">
+                        <img class="produtoimg" src="Imagens/bonefem.png">
+                    </div>
+                    <span>
+                        <h1 class="protxt1">Boné Liso Feminino Rabo Cavalo Ajustável</h1>
+                        <h1 class="protxt2">R$ 39,99</h1>
+                    </span>
+                </div>
+                <div class="produtocaixa">
+                    <div class="produto">
+                        <img class="produtoimg" src="Imagens/topyoga.png">
+                    </div>
+                    <span>
+                        <h1 class="protxt1">Top Yoga - Lilás</h1>
+                        <h1 class="protxt2">R$ 74,99</h1>
+                    </span>
+                </div>
+            </span>
+            <span class="linha1">
+                <div class="produtocaixa">
+                    <div class="produto">
+                        <img class="produtoimg" src="Imagens/tenisfem.png">
+                    </div>
+                    <span>
+                        <h1 class="protxt1">Tênis Feminino Verde Softierfoam </h1>
+                        <h1 class="protxt2">R$ 79,99</h1>
+                    </span>
+                </div>
+                <div class="produtocaixa">
+                    <div class="produto">
+                        <img class="produtoimg" src="Imagens/legging.png">
+                    </div>
+                    <span>
+                        <h1 class="protxt1">Calça Legging Fitness Estampa Digital Yellow Strings</h1>
+                        <h1 class="protxt2">R$ 64,99</h1>
+                    </span>
+                </div>
+                <div class="produtocaixa">
+                    <div class="produto">
+                        <img class="produtoimg" src="Imagens/jaquetacorrida.png">
+                    </div>
+                    <span>
+                        <h1 class="protxt1">Jaqueta Esportiva Branca de Corrida</h1>
+                        <h1 class="protxt2">R$ 299,99</h1>
+                    </span>
+                </div>
+            </span>
+        </div>
+    </div>
 </body>
 </html>
